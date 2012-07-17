@@ -7,6 +7,8 @@ en-GB:
     user_sessions:
       user:
         signed_out: "Logged out successfully"
+    failure:
+      invalid: "Incorrect username/password"
   price_sack: Price Sack
   price_range: Price Range
   under_price: "Under %{price}"  
@@ -30,6 +32,12 @@ en-GB:
     update: Update
   active: "Active"
   activerecord: 
+    errors:
+      models:
+        spree/user:
+          attributes:
+            password:
+              confirmation: "Mismatch"
     attributes: 
       address: 
         address1: Address
